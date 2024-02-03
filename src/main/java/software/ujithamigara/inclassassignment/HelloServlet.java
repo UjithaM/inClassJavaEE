@@ -12,8 +12,7 @@ public class HelloServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String value1 = req.getParameter("value");
-        String value = req.getHeader("value");
+        String value = req.getHeader("Value");
         System.out.println(value1 + "  :  " + value);
-
     }
 }
